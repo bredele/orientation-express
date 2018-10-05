@@ -12,6 +12,12 @@ var rotation = {
 }
 
 /**
+ * Expose moduile.
+ */
+
+module.exports = orientation
+
+/**
  * Get EXIF orientation of a file in a readable format.
  *
  * This module supports all mainstream browsers as well as IE10+.
@@ -21,7 +27,7 @@ var rotation = {
  * @api public
  */
 
-module.exports = function (file, cb) {
+function orientation (file, cb) {
   var reader = new FileReader()
   reader.onloadend = function (e) {
     var exif = reader.result
@@ -29,6 +35,24 @@ module.exports = function (file, cb) {
     cb(rotation[result], exif)
   }
   reader.readAsArrayBuffer(file)
+}
+
+/**
+ * Create file base 64 based on file type and buffer.
+ *
+ * @param {String} type
+ * @param {Buffer} buffer
+ * @param {String}
+ * @api public
+ */
+
+orientation.base64 = function (type, buffer) {
+  var binary = ''
+  var bytes = new Uint8Array(buffer)
+  for (var i = 0, len = bytes.byteLength; i < len; i++) {
+    binary += String.fromCharCode(bytes[i])
+  }
+  return "data:" + file.type + ";base64," + window.btoa(binary)
 }
 
 
