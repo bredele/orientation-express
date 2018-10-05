@@ -4,7 +4,7 @@
  [![Downloads](https://img.shields.io/npm/dm/orientation-express.svg)](http://npm-stat.com/charts.html?package=orientation-express)
  [![pledge](https://bredele.github.io/contributing-guide/community-pledge.svg)](https://github.com/bredele/contributing-guide/blob/master/guidelines.md)
 
-Get the EXIF orientation of a file in a readable format (rotation degree).
+Get the EXIF orientation of a file in a readable format (rotation degree) and correct the orientation of an image either you are on a mobile device or not.
 
 ## Usage
 
