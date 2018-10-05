@@ -1,0 +1,24 @@
+{
+  "name": "orientation-express",
+  "version": "1.0.0",
+  "description": "Get the EXIF orientation of a file in a readable format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/orientation-express.git"
+  },
+  "keywords": [
+    "exif",
+    "orientation",
+    "file"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/orientation-express/issues"
+  },
+  "homepage": "https://github.com/bredele/orientation-express#readme"
+}
